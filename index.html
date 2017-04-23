@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*.rectangle, .circle, .rect {
+			width: 100px;
+			height: 100px;
+			
+		}
+		.circle {
+
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		}
+		.rect {
+			-webkit-transform: scaleX(0.8) rotate(45deg) translateY(25px);
+			   -moz-transform: scaleX(0.8) rotate(45deg) translateY(25px);
+			    -ms-transform: scaleX(0.8) rotate(45deg) translateY(25px);
+			     -o-transform: scaleX(0.8) rotate(45deg) translateY(25px);
+			        transform: scaleX(0.8) rotate(45deg) translateY(25px);
+		}
+		*/
+	</style>
+</head>
+<body>
+	<script>
+
+		/*console.log('Hellow world');*/ // переданне значения выдаються в консоль
+		
+
+		/*var message = 'Hellow JS!';
+		console.log (message); 
+		console.log (message); 
+
+		message = 'middle';
+		console.log (message); 
+		console.log (message); 
+
+		message = 'end';
+		console.log (message); 
+		console.log (message); */
+		 // пример того как выводить информ при минимальном изминении
+
+
+		 /*var a = 2, 
+		 	 b =5;
+		 
+		 a = b; */
+
+		 /*console.log (a)*/ // значения 5 уже потеряли
+
+		 /* var a = b = c = 7; */ // 5
+
+		 /*value = 123; */ // так делать нельзя, нужно объявлять переменными через  (var)
+
+
+		 /* var a = 2,
+		 	 b = 5,
+		 	 c = 7;
+
+		 var summ = (a + b + c);
+
+		 console.log(summ); */
+
+		/* var a = 2,
+		 	 b = 5,
+		 	 c = 7;
+
+		 console.log(a - b - c); */
+
+
+
+
+		 /* console.log( 0.1 + 0.2 );*/ // недочет из-за того что JS 64 битный
+
+		/*  console.log( 10 % 3 ); */
+
+
+		
+
+		/* console.log(typeof '555');
+		console.log(typeof 555); */
+		 // typeof для проверки строка или число
+
+		/*var result = Number ('555')
+
+		console.log(
+					typeof result, 
+					result 
+					); */
+
+		/* var result = parseInt ('555qq') //превращение не валлидный код в нормальный
+
+		console.log(
+					typeof result, 
+					result 
+					); */
+
+		/*var result = parseFloat ('555.qqqweq') //
+
+		console.log(
+					typeof result, 
+					result
+					); */
+
+		/*var result = string(a);
+
+		console.log(
+					typeof result, 
+					result
+					);*/ //преобразование числа в строгу с числами не работает только 
+
+
+
+		/*var expression = true 
+		console.log(
+			typeof expression,
+			expression);*/ // boolen
+
+		/*var a = 2;
+
+		if (a > 0)
+			console.log('Больше 0')
+		else 
+			console.log('Меньше 0'); */
+
+
+		/* var a = 20;
+
+		if (a > 0) {
+			//true
+			console.log('Результат:')
+			console.log('Больше 0')
+		} else {
+			//false
+			console.log('Результат:')
+			console.log('Меньше 0');
+		}*/
+
+		/* var a = 20, b = 50;
+
+		if (a > 0 && b > 0) {
+			//true
+			console.log('Результат:')
+			console.log('Больше 0')
+		} else {
+			//false
+			console.log('Результат:')
+			console.log('Меньше 0');
+		}
+		*/
+
+
+		// && (И), || (или)
+
+
+		/* var ROLE = 'admin'; // user, moderator ...
+		if (ROLE === 'admin') {
+			console.log('Привет Админ!');
+		} else if (ROLE === 'moderator') {
+			console.log('Привет Модератор!');
+		} else if (ROLE === 'User') {
+			console.log('Привет Пользователь!');
+		} else {
+			console.log('Я тебя не знаю');
+		} */
+
+
+		/* alert(); */ // им лучше не позьзоваться
+
+		/* var ROLE = prompt('Ваша роль?');
+		
+		if (ROLE === 'admin') {
+			console.log('Привет Админ!');
+		} else if (ROLE === 'moderator') {
+			console.log('Привет Модератор!');
+		} else if (ROLE === 'User') {
+			console.log('Привет Пользователь!');
+		} else {
+			console.log('Я тебя не знаю');
+		} */
+
+
+		/*var ROLE = prompt('Ваша роль?');
+		// промт всегда возвращает в строку, придется приобразовывать, так же и '+' приобразует в строку
+		switch (ROLE) {
+		case 'admin' : 
+			console.log('Привет Админ!');
+			break;
+		case 'moderator' : 
+			console.log('Привет Модератор!');
+			break;
+		case 'user':
+		case 'user2':
+			console.log('Привет Пользователь!');
+			break;
+		default: 
+			console.log('Я тебя не знаю');
+		} */
+
+
+		/* var a = +prompt('Проверяемое число');
+		a > 0 ? console.log(Больше) : console.log(Меньше);*/ // используем тринарный оператор если условия "маленькое"!!! 
+
+		/*var a = +prompt('Проверяемое число');
+
+		a > 0 ? 
+			(
+		a > 100 ? console.log(a+' Больше 0 и 100') : 
+			console.log(a+' Больше 0 меньше 100')
+			):
+			console.log('Меньше 0'); */
+
+		/*var a = 5;
+		a += 5;
+		a -= 5;// a = a - 5
+		a *= 5;// a = a * 5
+
+		a++;
+		a--;*/
+
+
+		//2 числа - вводим через (prompt)
+		/*________________________
+		вывести ошибку
+
+		console.log('Сумма'+ a + ' и ' + b + ' =' + res);
+		________________________
+		1. + 'Сумма 5 + 8 = ' result 
+		2. - '='
+		3. * '='
+		4. /
+		5. остаток от деления 1 на 2 | 2 на 1 */
+
+		
+
+
+
+
+
+
+
+
+		/*var a = +prompt('число А'),
+			b = +prompt('число Б');
+
+			console.log (a,b)*/
+
+
+		/*var a = -prompt('число А'),
+			b = -prompt('число Б');
+
+			console.log(a,b)*/
+
+
+
+
+			/*// проверка
+			if ( !isNaN(a) && !is NaN(b) ) {
+				
+			}*/
+
+			// запрашиваем строку через ПРОМАТ, дальше у нас идет проверка являеться числом НОТ Енамбр, если нет тогда у нас фолс, дальше производим математические оперции
+			/*var a = +prompt('число А'),
+			b = Number(prompt('число Б'));
+
+			if (!isNaN(a) && !isNaN(b) ) {
+				console.log(a + ' + ' + b + '='+ (a+b));
+				console.log(a + ' - ' + b + '='+ (a-b));
+				console.log(a + ' * ' + b + '='+ (a*b));
+				console.log(a + ' % ' + b + '='+ (a%b));
+				console.log(b + ' % ' + a + '='+ (b%a));
+			} else {
+				console.log('Не число')
+			}*/
+
+			/*var color = prompt ('Цвет'), 
+				form = prompt('Форма'),
+				$class;
+			// circle
+			// квадрат
+			// ромб
+
+			switch(form) {
+			case 'круг': 
+				$class = 'circle'
+				break;
+			case 'квадрат':
+				$class = 'rectangle';
+				break;
+			case 'ромб':
+				$class = 'rect';
+				break;
+			default:
+				document.write('Неизвестная фигура');
+			}
+
+			if ($class) {
+				document.write(
+					'<div class="'+$class+'" style="background:'+color+'"></div>')
+				};
+
+			*/
+
+
+			// dz!! 	https://jsfiddle.net/
+				/* https://prog.kiev.ua/forum/index.php/topic,2860.0.html */
+
+				// Math округление в большую сторону
+				/*console.log(
+					Math.floor) */
+
+
+			
+
+	</script>
+</body>
+</html>
